@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "name": "next-imecolletter",
+  "version": "0.0.0",
+  "author": "Yuki Yano <yuki.ycino@gmail.com>",
+  "main": "app/background.js",
+  "scripts": {
+    "dev": "nextron",
+    "build": "nextron build",
+    "typecheck": "tsc --project . --noEmit",
+    "typecheck:watch": "tsc --project . --noEmit --watch",
+    "lint": "eslint '{main,renderer}/**/*.{ts,tsx}'",
+    "lint:fix": "eslint --fix '{main,renderer}/**/*.{ts,tsx}'",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "electron-serve": "^0.3.0",
+    "electron-store": "^3.2.0",
+    "next": "^9.0.2",
+    "oauth-electron-twitter": "^1.0.44",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@types/next": "^8.0.6",
+    "@types/node": "^12.6.2",
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.4",
+    "@typescript-eslint/eslint-plugin": "^1.12.0",
+    "@typescript-eslint/parser": "^1.12.0",
+    "electron": "^5.0.7",
+    "electron-builder": "^21.1.1",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "nextron": "^5.3.1",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.3"
+  }
+}
